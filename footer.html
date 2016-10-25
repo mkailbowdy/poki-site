@@ -1,0 +1,67 @@
+<footer class="navbar navbar-inverse">
+    <div class="container">
+        <p class="navbar-text pull-left">Site Built by Myhkail Mendoza</p>
+        <a href="https://www.facebook.com/myhkail" class="btn navbar-btn pull-right navbar-link"><img src="img/instagram.png"></a>
+        <a href="https://www.instagram.com" class="btn navbar-btn pull-right navbar-link"><img src="img/facebook.png"></a>
+<!--        <a href="https://youtube.com" class="navbar-btn btn btn-danger pull-right">Subscribe on YouTube</a>-->
+    </div>
+</footer>
+        
+        
+<!--        Load this modal last almost last since user wont open the modal right away anyways.-->
+<div class="modal fade" tabindex="-1" role="dialog" id="about">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">About</h4>
+      </div>
+      <div class="modal-body">
+        <p>I've been a casual pc builder for almost 10 years. I love feeling of seeing the computer boot up for the first time. I have always been the go-to guy for help with choosing components and putting a rig together. I've gotten so many requests from friends family to help them put something together, and so I finally decided to make a site that streamlines the entire process of choosing components.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade" id="contact" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <h3>Contact Form</h3>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="col-lg-2 control-label">Message</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="8" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Cancel</a>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.js"></script>

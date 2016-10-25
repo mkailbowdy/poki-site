@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gaming Rig Builds</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/cf35df1209.js"></script>
+        
+        <script>
+            $(function(){
+                $("#navigation").load("navigation.html");
+                $("#footer").load("footer.html");
+                $("#listing").load("listing.html");
+            });
+        </script>
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+
+            <!--                data-target=".navHeaderCollapse" will target the div below with the class navHeaderCollapse-->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse" aria-expanded="false">
+            <!--                    These three spans with class icon-bar make the hamburger menu icon-->
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Tech Site</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navHeaderCollapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#listing">Builds</a></li>
+    <!--                        used data-target to target the modal ids-->
+                            <li><a href="javascript:;" data-toggle="modal" data-target="#about">About</a></li>
+                            <li><a href="javascript:;" data-toggle="modal" data-target="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        
+        <div id="top">
+            <div class="container">
+                <div class="jumbotron">
+                    <div id="vertical-align">
+                        <h1>Build Your Rig</h1>
+                        <div class="down-arrow-block">
+                            <a href="#listing" class="pulse-button"></a>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        <section id="step1">
+            <h2>Step 1</h2>
+            <h3>Choose Your Base</h3>
+            <ul>
+                <li>
+                    Bowl
+                    <ul>
+                        <li>White Rice</li>
+                        <li>Brown Rice</li>
+                        <li>Salad</li>
+                        <li>Chips</li>
+                        <li>Half &amp; Half</li>
+                    </ul>
+                </li>
+                <li>
+                    Wrap
+                    <ul>
+                        <li>Poki Burrito <small>White Rice Only</small></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="step2">
+            <h2>Step 2</h2>
+            <h3>Choose Your Add-Ons</h3>
+            <ul>
+                <li>Avocado</li>
+                <li>Imitation Crab</li>
+                <li>Cucumber</li>
+                <li>White Onion</li>
+                <li>Everything</li>
+            </ul>
+        </section>
+        <section id="step3">
+            <h2>Step 3</h2>
+            <h3>Choose Your Fish</h3>
+            <ul>
+                <li>Salmon</li>
+                <li>Tuna</li>
+                <li>Albacore</li>
+                <li>Yellowtail</li>
+                <li>Shrimp</li>
+                <li>Octopus</li>
+                <li>Scallop</li>
+                <li>Spicy Tuna</li>
+            </ul>
+            <h4>Pick</h4>
+            <ul>
+                <li>2-Small</li>
+                <li>3-Regular</li>
+                <li>5-Large</li>
+                <li>5-Large</li>
+                <li>3-Burrito</li>
+            </ul>
+        </section>
+        <section id="step4">
+            <h2>Step 4</h2>
+            <h3>Choose Your Sauce</h3>
+            <ul>
+                <li>Poki Sauce (Mild)</li>
+                <li>Spicy Poki Sauce</li>
+                <li>Hot Poki Sauce</li>
+                <li>Fire Poki Sauce</li>
+            </ul>
+            <h4>Grab an Extra Sauce:</h4>
+            <ul>
+                <li>Spicy Mayo Sauce</li>
+                <li>Ponzu Sauce</li>
+            </ul>
+        </section>
+        
+        <div id="footer"></div>
+        <script src="bower_components/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar.min.js"></script>
+        <script src="js/script.js"></script>        
+    </body>
+</html>
