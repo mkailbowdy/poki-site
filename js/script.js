@@ -5,6 +5,8 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     }
 });
 
+// Smooth Scroll
+
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -24,3 +26,5 @@ $(function() {
 $(".navbar-fixed-top").autoHidingNavbar({
   // see next for specifications
 });
+
+
