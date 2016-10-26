@@ -6,7 +6,7 @@ $secondary: #ABB8B8; // .jumbotron h2, a[href="#"]:hover, .pulse-button backgrou
 $pulse-box-shadow: rgba(255, 153, 9, 0.4);
 $pulse-color: rgba(232, 76, 61, 0);
 
-.modal-header h3, .step, #about, #read-page, a[class="list-group-item"], a[class="list-group-item"]:hover {
+.modal-header h3, #about, #read-page, a[class="list-group-item"], a[class="list-group-item"]:hover {
     color: $black;
 }
 
@@ -14,11 +14,17 @@ a[href="#"], .downArrow i {
     color: $white;
 }
 
-.jumbotron h1 {
-    color: $main;
+.jumbotron {
+    h1 {
+        color: $main;
+    }
+    h2 {
+        color: $secondary;
+    }
+    
 }
 
-body, .jumbotron h2, a[href="#"]:hover {
+body, a[href="#"]:hover {
     color: $secondary;
 }
 .pulse-button {
@@ -28,7 +34,29 @@ body, .jumbotron h2, a[href="#"]:hover {
     box-shadow: 0 0 0 0 $pulse-box-shadow;
 }
 
-/************ Mixins ****************/
+/************ Keyframes and Mixins ****************/
+
+@mixin keyframes($pulse) {
+    @-webkit-keyframes #{$pulse} {
+        @content;
+    }
+    @-moz-keyframes #{$pulse}  {
+        @content;
+    }
+    @-o-keyframes #{$pulse} {
+        @content;
+    }
+    @keyframes #{$pulse} {
+        @content;
+    }
+}
+
+@include keyframes(pulse) {
+    to {
+            box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);
+    }
+}
+
 @mixin pulse-keyframes-box-shadow($pulse-color) {
   $tilt: rotate(15deg);
 
@@ -47,6 +75,26 @@ body, .jumbotron h2, a[href="#"]:hover {
 
 .pulse-button {
     @include pulse-animation();
+    display:inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 0 0 0 rgba(255, 153,9, 0.4);
+    border-radius: 50%;
+    background-color: lightgray;
+    background-image: url(../img/downarrow.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.pulse-button:hover 
+{
+  -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none;
 }
 
 /****** General Styles *********/
@@ -59,7 +107,6 @@ body {
 }
 
 
-
 a, a:link, a:hover, a:active, a:visited {
     text-decoration: none;
 }
@@ -67,11 +114,35 @@ a, a:link, a:hover, a:active, a:visited {
 /****** Header Style *********/
 .jumbotron {
     background-color: transparent;
+    overflow: hidden;
 }
 
 #top {
     height: 90vh;
     padding: 2em;
+}
+
+.down-arrow-block {
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+.downArrow {
+    i {
+        width: 50px;
+        height: 50px;
+        font-size: 3em;
+    }
+    
+}
+
+#vertical-align {
+    margin-top: 20vh;
+    text-align: center;
+    h1 {
+        font-size: 4em;
+    }
 }
 
 
@@ -95,6 +166,17 @@ nav {
     margin:0;
 }
 
+.navbar-inverse {
+    border-style: none;
+    .navbar-brand {
+        /*color : #fff; */
+    }
+}
+
+.navbar-fixed-top {
+    margin: 0;
+}
+
 /****** Sections ****************/
 .step {
     background: #000;
@@ -102,6 +184,8 @@ nav {
 
 /****** Footer Style *********/
 footer {
+    height: 100px;
+    margin: 0;
     img {
         height: 35px; 
         max-width: 100%;

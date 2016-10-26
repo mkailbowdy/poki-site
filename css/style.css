@@ -1,238 +1,197 @@
-body {
-/*    So that the static footer doesn't cover content'*/
-    margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
+/********* Colors ********************/
+/* line 9, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.modal-header h3, #about, #read-page, a[class="list-group-item"], a[class="list-group-item"]:hover {
+  color: #000;
 }
 
-.jumbotron {
-    background-color: transparent;
+/* line 13, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+a[href="#"], .downArrow i {
+  color: #fff;
 }
 
-#top {
-    height: 90vh;
-    padding: 2em;
-}
-
-footer img {
-    height: 35px; 
-    max-width: 100%;
-}
-
-.navbar {
-    /* frees up the very bottom of the page for the footer */
-    margin:0;
-}
-a:link, a:hover, a:active, a:visited {
-    text-decoration: none;
-}
-
-
-.step {
-    background: #000;
-}
-/*===============================
-Typography
-================================
-*/
-
+/* line 18, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
 .jumbotron h1 {
-    color: orange;
+  color: #ff9909;
 }
 
-.jumbotron h2{
-    color: #ABB8B8;
+/* line 21, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.jumbotron h2 {
+  color: #ABB8B8;
 }
 
-nav {
-    padding: 5px 0px;
+/* line 27, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+body, a[href="#"]:hover {
+  color: #ABB8B8;
 }
 
-nav.navbar-inverse {
-    border-style: none;   
-}
-.navbar-inverse .navbar-brand {
-    /*color: #fff;*/
-}
-.modal-header h3 {
-    color: #000;
-}
-
-nav li {
-    padding: 0 8px;
-}
-
-li a {
-    text-transform: uppercase;
-    font-size: 1.2em;
-}
-
-/*===============================
-footer
-================================
-*/
-
-
-footer {
-    height: 100px;
-    margin: 0;
-}
-
-
-/*===============================
-Animation
-================================
-*/
-/*
-@keyframes hovercolor {
-    0% {
-      background-color: transparent;
-    }
-    10% {
-        background-color: rgba(255, 90, 0, 0.2);
-    }
-    100% {
-      background-color: rgba(255, 0, 0, 0.2);
-      border: 2px solid #d3d3d3;
-    }
-}
-
-*/
-
-.jumbotron {
-    overflow: hidden;
-}
-
-
-/*===============================
-Media Queries
-================================
-*/
-
-@media(max-width:767px){
-
-}
-@media(min-width:768px){
-
-
-}
-@media(min-width:992px){
-
-
-}
-@media(min-width:1200px){
-
-}
-
-
-.navbar-fixed-top {
-    margin: 0;
-}
-
-#about {
-    color: #000;
-}
-
-
-
-a[href="#"] {
-    color: #fff;
-}
-
-a[href="#"]:hover {
-    color: #d3d3d3;
-}
-
-
-
-[alt="feature image"]{
-    max-width: 100%;
-}
-
-[alt="sub image"] {
-    max-width: 60%;
-}
-
-
-
-#read-page {
-    color: #000;
-}
-
-a[class="list-group-item"] {
-    color: #000;
-}
-
-a[class="list-group-item"]:hover {
-    color: rgb(0, 0, 0);
-}
-
-#builds {
-    padding: 20px;
-}
-
-.listing-column {
-    border: 2px solid transparent;
-}
-
-.down-arrow-block {
-    margin-top: 80px;
-    text-align: center;
-}
-
-
-.downArrow i{
-    width: 50px;
-    height: 50px;
-    font-size: 3em;
-    color: #fff;
-}
-
-#vertical-align {
-    margin-top: 20vh;
-    text-align: center;
-}
-
-#vertical-align h1 {
-    font-size: 4em;
-}
-
-/* ==================
-    PLUGIN
-*/
-
+/* line 30, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
 .pulse-button {
-  display:inline-block;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border: none;
-  box-shadow: 0 0 0 0 rgba(255, 153,9, 0.4);
-  border-radius: 50%;
-  background-color: lightgray;
-  background-image: url(../img/downarrow.png);
-  background-size:cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
+  background-color: #ABB8B8;
+}
+
+/* line 33, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.pulse-button {
+  box-shadow: 0 0 0 0 rgba(255, 153, 9, 0.4);
+}
+
+/************ Keyframes and Mixins ****************/
+@-webkit-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);
+  }
+}
+
+@-moz-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);
+  }
+}
+
+@-o-keyframes pulse {
+  to {
+    box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);
+  }
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);
+  }
+}
+
+/* line 76, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.pulse-button {
   -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(255, 153, 9, 0.4);
+  border-radius: 50%;
+  background-color: lightgray;
+  background-image: url(../img/downarrow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
-.pulse-button:hover 
-{
-  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+
+/* line 92, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.pulse-button:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
 }
 
-@-webkit-keyframes pulse {to {box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);}}
-@-moz-keyframes pulse {to {box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);}}
-@-ms-keyframes pulse {to {box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);}}
-@keyframes pulse {to {box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);}}
+/****** General Styles *********/
+/* line 102, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+body {
+  /*    So that the static footer doesn't cover content'*/
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+}
 
+/* line 110, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+a, a:link, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
 
+/****** Header Style *********/
+/* line 115, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.jumbotron {
+  background-color: transparent;
+  overflow: hidden;
+}
 
+/* line 120, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+#top {
+  height: 90vh;
+  padding: 2em;
+}
 
+/* line 125, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.down-arrow-block {
+  margin-top: 80px;
+  text-align: center;
+}
 
+/* line 132, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.downArrow i {
+  width: 50px;
+  height: 50px;
+  font-size: 3em;
+}
 
+/* line 140, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+#vertical-align {
+  margin-top: 20vh;
+  text-align: center;
+}
 
+/* line 143, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+#vertical-align h1 {
+  font-size: 4em;
+}
 
+/****** Navigation Style *********/
+/* line 150, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+nav {
+  padding: 5px 0px;
+}
 
+/* line 153, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 156, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+nav ul li a {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+/* line 164, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.navbar {
+  /* frees up the very bottom of the page for the footer */
+  margin: 0;
+}
+
+/* line 169, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.navbar-inverse {
+  border-style: none;
+}
+
+/* line 171, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.navbar-inverse .navbar-brand {
+  /*color : #fff; */
+}
+
+/* line 176, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.navbar-fixed-top {
+  margin: 0;
+}
+
+/****** Sections ****************/
+/* line 181, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+.step {
+  background: #000;
+}
+
+/****** Footer Style *********/
+/* line 186, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+footer {
+  height: 100px;
+  margin: 0;
+}
+
+/* line 189, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+footer img {
+  height: 35px;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=../css/style.map */
