@@ -1,35 +1,35 @@
 /********* Colors ********************/
-/* line 9, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 9, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .modal-header h3, #about, #read-page, a[class="list-group-item"], a[class="list-group-item"]:hover {
   color: #000;
 }
 
-/* line 13, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 13, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 a[href="#"], .downArrow i {
   color: #fff;
 }
 
-/* line 18, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 18, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .jumbotron h1 {
   color: #ff9909;
 }
 
-/* line 21, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 21, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .jumbotron h2 {
   color: #ABB8B8;
 }
 
-/* line 27, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 27, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 body, a[href="#"]:hover {
   color: #ABB8B8;
 }
 
-/* line 30, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 30, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .pulse-button {
   background-color: #ABB8B8;
 }
 
-/* line 33, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 33, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .pulse-button {
   box-shadow: 0 0 0 0 rgba(255, 153, 9, 0.4);
 }
@@ -59,7 +59,7 @@ body, a[href="#"]:hover {
   }
 }
 
-/* line 76, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 76, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .pulse-button {
   -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
   -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -79,7 +79,7 @@ body, a[href="#"]:hover {
   cursor: pointer;
 }
 
-/* line 92, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 92, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .pulse-button:hover {
   -webkit-animation: none;
   -moz-animation: none;
@@ -88,107 +88,131 @@ body, a[href="#"]:hover {
 }
 
 /****** General Styles *********/
-/* line 102, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 102, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 body {
   /*    So that the static footer doesn't cover content'*/
   margin-bottom: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* line 110, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 110, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 a, a:link, a:hover, a:active, a:visited {
   text-decoration: none;
 }
 
+/* line 114, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
+.container {
+  margin-bottom: 2%;
+}
+
 /****** Header Style *********/
-/* line 115, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 119, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .jumbotron {
   background-color: transparent;
   overflow: hidden;
 }
 
-/* line 120, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 124, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 #top {
-  height: 90vh;
+  height: 100vh;
   padding: 2em;
 }
 
-/* line 125, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 129, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .down-arrow-block {
   margin-top: 80px;
   text-align: center;
 }
 
-/* line 132, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 136, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .downArrow i {
   width: 50px;
   height: 50px;
   font-size: 3em;
 }
 
-/* line 140, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 144, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 #vertical-align {
   margin-top: 20vh;
   text-align: center;
 }
 
-/* line 143, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 147, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 #vertical-align h1 {
   font-size: 4em;
 }
 
 /****** Navigation Style *********/
-/* line 150, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 154, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 nav {
   padding: 5px 0px;
 }
 
-/* line 153, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 157, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 nav ul {
   list-style: none;
 }
 
-/* line 156, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 160, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 nav ul li a {
   text-transform: uppercase;
   font-size: 1.2em;
 }
 
-/* line 164, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 168, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .navbar {
   /* frees up the very bottom of the page for the footer */
   margin: 0;
 }
 
-/* line 169, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 173, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .navbar-inverse {
   border-style: none;
 }
 
-/* line 171, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 175, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .navbar-inverse .navbar-brand {
   /*color : #fff; */
 }
 
-/* line 176, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 180, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .navbar-fixed-top {
   margin: 0;
 }
 
 /****** Sections ****************/
-/* line 181, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 185, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
+#menu {
+  color: #ff9909;
+  font-size: 4em;
+  text-align: center;
+}
+
+/* line 190, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 .step {
   background: #000;
+  border: 1px solid #ff9909;
+  height: 425px;
+}
+
+/* line 194, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
+.step h2 {
+  color: #ff9909;
+}
+
+/* line 197, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
+.step h3, .step ul {
+  color: #fff;
 }
 
 /****** Footer Style *********/
-/* line 186, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 203, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 footer {
   height: 100px;
-  margin: 0;
+  margin-top: 0;
 }
 
-/* line 189, E:/Users/Myhkail/workspace/poki-one-half/scss/style.scss */
+/* line 206, /Users/myhkailmendoza/workspace/poki-site/scss/style.scss */
 footer img {
   height: 35px;
   max-width: 100%;
